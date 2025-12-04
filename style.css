@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('https://i.pinimg.com/736x/92/ae/0b/92ae0b9ba32822187292defb1f6811c4.jpg') no-repeat center center/cover;
+    width: 100%;
+    color: white;
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.search-box {
+    display: flex;
+}
+
+.search-box input {
+    padding: 8px 12px;
+    border: none;
+    outline: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-box button {
+    padding: 8px 15px;
+    border: none;
+    background: orange;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+/* Main section */
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 60px;
+}
+
+.content {
+    max-width: 45%;
+}
+
+.content h1 {
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.content span {
+    color: orange;
+}
+
+.content p {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.join-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: orange;
+    border: none;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Login Box */
+.login-box {
+    width: 300px;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-box h2 {
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signup-text {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.signup-text a {
+    color: orange;
+}
+
+.login-with {
+    margin-top: 10px;
+}
+
+.social-icons i {
+    margin: 10px 8px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.social-icons i:hover {
+    color: orange;
+}
