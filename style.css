@@ -5,144 +5,115 @@
     font-family: Arial, sans-serif;
 }
 
-body {
-    background: url('https://i.pinimg.com/736x/92/ae/0b/92ae0b9ba32822187292defb1f6811c4.jpg') no-repeat center center/cover;
-    width: 100%;
-    color: white;
-}
-
-/* Header */
-header {
-    width: 100%;
-    padding: 20px 40px;
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 60px;
+    background: white;
 }
 
 .logo {
+    color: #e41c2b;
     font-size: 28px;
     font-weight: bold;
-    color: #ff6600;
 }
 
-nav a {
-    margin: 0 15px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.search-box {
+nav ul {
     display: flex;
+    list-style: none;
+    gap: 30px;
+ 
 }
 
-.search-box input {
-    padding: 8px 12px;
-    border: none;
-    outline: none;
-    border-radius: 4px 0 0 4px;
-}
-
-.search-box button {
-    padding: 8px 15px;
-    border: none;
-    background: orange;
-    color: white;
-    border-radius: 0 4px 4px 0;
+nav ul li {
     cursor: pointer;
+    font-weight: 500;
 }
 
-/* Main section */
-.main {
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url("https://images.unsplash.com/photo-1586190848861-99aa4a171e90");
+    background-size: cover;
+    background-position: center;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 80px 60px;
+    padding-left: 60px;
 }
 
-.content {
-    max-width: 45%;
+.hero-text {
+    color: white;
 }
 
-.content h1 {
-    font-size: 50px;
-    line-height: 1.2;
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
 }
 
-.content span {
-    color: orange;
-}
-
-.content p {
-    margin-top: 15px;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.join-btn {
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: orange;
-    border: none;
-    color: black;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-/* Login Box */
-.login-box {
-    width: 300px;
-    background: rgba(0, 0, 0, 0.75);
-    padding: 25px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.login-box h2 {
-    color: orange;
+.hero-text p {
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
-.login-box input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+.hero-text button {
+    padding: 12px 25px;
     border: none;
-    border-radius: 5px;
-}
-
-.login-btn {
-    width: 100%;
-    padding: 10px;
-    background: orange;
-    border: none;
-    border-radius: 5px;
+    background: #e41c2b;
+    color: white;
     font-size: 16px;
     cursor: pointer;
 }
 
-.signup-text {
-    margin-top: 10px;
-    font-size: 14px;
+.brands {
+    padding: 60px;
+    text-align: center;
 }
 
-.signup-text a {
-    color: orange;
+.brands h2 {
+    margin-bottom: 30px;
 }
 
-.login-with {
-    margin-top: 10px;
+.brand-logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+ 
 }
 
-.social-icons i {
-    margin: 10px 8px;
-    font-size: 20px;
-    cursor: pointer;
+.brand {
+    background: #f4f4f4;
+    padding: 30px 40px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+.impact {
+    background: #f9f9f9;
+    padding: 60px;
+    text-align: center;
+}
+
+footer {
+    background: black;
     color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-.social-icons i:hover {
-    color: orange;
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .brand-logos {
+        flex-direction: column;
+    }
 }
